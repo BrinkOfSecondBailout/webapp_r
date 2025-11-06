@@ -32,7 +32,7 @@ impl ThreadPool {
     // Create new ThreadPool
     // Size is number of threads in pool
     // # Panics
-    // `new` will panice if size is zero
+    // `new` will panic if size is zero
     pub fn new(size: usize) -> ThreadPool {
         assert!(size > 0);
         let (sender, receiver) = mpsc::channel();
